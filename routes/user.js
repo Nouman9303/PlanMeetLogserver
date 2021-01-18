@@ -121,7 +121,7 @@ router.get("/details",auth,async(req,res) => {
 
 
     //++++++++++++++++++++++++++++++++++++++register users count +++++++++++++++++++++++++++++++++++++++++++++++++++
-    router.get("/detailsss",auth,async(req,res) => {
+    router.get("/detailsss",async(req,res) => {
       // const { email } = req.body;
       const user = await User.find({ });
       res.status(200).send(user);
