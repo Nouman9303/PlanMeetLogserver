@@ -45,7 +45,7 @@ var moment = require('moment');
   app.use("/api/history", require("./routes/history"));
   var moment = require("moment"); // require
   moment().format();
-  app.listen(5000, () => {
+  app.listen(process.env.PORT || 5000, () => {
     console.log("running on server 5000");
   });
 })();
